@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com Botões</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+        }
+        video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background-color: #556B2F; /* Verde oliva */
+            text-decoration: none;
+            margin: 10px;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #6B8E23;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <video controls>
+            <source src="seu_video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+
+        <div class="button-container">
+            <a href="https://maps.app.goo.gl/hZF9Gki5RMBeayTDA" class="button" target="_blank">
+                <span class="icon">📍</span> Localização
+            </a>
+
+            <a href="https://api.whatsapp.com/send/?phone=05528992712175&text=Oi+Gostaria+de+confirmar+minha+presen%C3%A7a+no+Ch%C3%A1+de+Fraldas+do+Ben%C3%ADcio&type=phone_number&app_absent=0" class="button" target="_blank">
+                <span class="icon">✔️</span> Confirmar Presença
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
